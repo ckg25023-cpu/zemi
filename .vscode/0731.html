@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       :root{
+        /*定義名  :  値  :    　の順番で書く*/
+        --my-background-color: gray;
+        --my-border-size: 1px
+        --mytest-border-size: 5px;
+        --my-color-green: rgb(64,233,64)
+       }
+       div{
+            /*周りにグレーの線を付ける*/
+            border: solid  1px gray;
+            /*余白を付けた*/
+            margin: 5px;
+        }
+        .container{
+            display: flex;
+            flex-direction: row
+            flex-wrap wrap;  /*要素の大きさを固定して横にはみ出る場合には次の行に移す*/
+        justify-content: space-around;
+                        /*space-araoundとspace-betweenは
+                        外側の要素に余白を付けるか否か*/
+        height: 500px
+        align-item:flex-end;a
+        }
+
+        .item{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="item">item 1</div>
+    <div class="item">item 2</div>
+    <div class="item">item 3</div>
+    <div class="item">item 4</div>
+   </div> 
+</body>
+</html>
